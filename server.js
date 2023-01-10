@@ -4,16 +4,14 @@ const inquirer = require('inquirer');
 const express = require('express');
 require("console.table");
 require("dotenv").config();
-console.log(process.env)
 console.log("Employee-Tracker-12")
 //express app//
 // connection //
 const app = express();
 const connection = mysql.createConnection({
     host: "localhost",
-    port: "3001",
     user: "root",
-    password: process.env.DB_PASSWORD,
+    password: 'mysql259315@',
     database: "employees_db",
   });
   connection.connect(function (err) {
@@ -51,27 +49,36 @@ choices: [
     },
 ])
 .then(function (data) {
+
 //switch//
  switch (data.nav) {
- case "Add Department":
- addDepartment();
-break; case "Add Role":
-addRole();
-break; case "Add Employee":
- addEmployee();
-break; case "View All Employees":
-viewAllEmployees();
-break; case "View All Roles":
-viewAllRoles();
-break; case "View All Departments":
-viewAllDepartments();
-break; case "View All Employees By Department":
-viewEmployeeDepartment();
-break; case "Update Employee Role":
-updateEmployeeRole();
-break; case "Quit":
-quit();
-break;
+          case "View All Employees":
+            viewAllEmployees();
+            break;
+          case "View All Roles":
+            viewAllRoles();
+            break;
+          case "View All Departments":
+            viewAllDepartments();
+            break;
+          case "View All Employees By Department":
+            viewEmployeeDepartment();
+            break;
+          case "Add Employee":
+            addEmployee();
+            break;
+          case "Add Department":
+            addDepartment();
+            break;
+          case "Add Role":
+            addRole();
+            break;
+          case "Update Employee Role":
+            updateEmployeeRole();
+            break;
+          case "Quit":
+            quit();
+            break;
   }
 })
 //catch//
