@@ -12,4 +12,5 @@ creating a command-line application using NodeJS and SQL database capable of vie
 
 ### Walk through video
 
-[Untitled_ Jan 8, 2023 2_29 PM.webm](https://user-images.githubusercontent.com/107729218/211222439-d9f5d4ea-a7de-44c2-83e6-97f0e6ae03dd.webm)
+
+[Untitled_ Jan 9, 2023 10_05 PM.webm](https://user-images.githubusercontent.com/107729218/211474461-60172752-4490-44e5-8a9b-de32645ee320.webm)
